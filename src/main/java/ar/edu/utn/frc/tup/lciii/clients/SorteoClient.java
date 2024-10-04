@@ -26,12 +26,14 @@ public class SorteoClient {
     public List<SorteoResponse> getSorteosByFecha(LocalDate fecha) {
 
         //http://localhost:8082/sorteos?fecha=2024-01-16
+        //http://loteria-api-externa:8082/sorteos?fecha=2024-01-16
+
         String url = "";
 
         if (fecha != null){
-            url = "http://localhost:8082/sorteos?fecha=" + fecha;
+            url = "http://loteria-api-externa:8082/sorteos?fecha=" + fecha;
         } else {
-            url = "http://localhost:8082/sorteos";
+            url = "http://loteria-api-externa:8082/sorteos";
         }
 
         ResponseEntity<List<SorteoResponse>> response = restTemplate.exchange(

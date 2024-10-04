@@ -1,4 +1,5 @@
 ar\edu\utn\frc\tup\lciii\controllers\LoteriaControllerTest.class
+ar\edu\utn\frc\tup\lciii\services\LoteriaServiceTest.class
 ar\edu\utn\frc\tup\lciii\controllers\PingControllerTest.class
 ar\edu\utn\frc\tup\lciii\ApplicationTests.class
 ar\edu\utn\frc\tup\lciii\configs\SpringDocConfigTest.class

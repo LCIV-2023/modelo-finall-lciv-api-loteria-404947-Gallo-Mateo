@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: ar.edu.utn.frc.tup.lciii.configs.SpringDocConfigTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.393 s <<< FAILURE! - in ar.edu.utn.frc.tup.lciii.configs.SpringDocConfigTest
-ar.edu.utn.frc.tup.lciii.configs.SpringDocConfigTest.getDocumentation  Time elapsed: 0.81 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.21 s <<< FAILURE! - in ar.edu.utn.frc.tup.lciii.configs.SpringDocConfigTest
+ar.edu.utn.frc.tup.lciii.configs.SpringDocConfigTest.getDocumentation  Time elapsed: 0.348 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

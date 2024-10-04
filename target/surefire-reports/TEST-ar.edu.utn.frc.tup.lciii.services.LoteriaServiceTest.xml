@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest" time="1.382" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="1.035" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -49,7 +49,7 @@
     <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
     <property name="java.io.tmpdir" value="C:\Users\mateo\AppData\Local\Temp\"/>
     <property name="idea.version" value="2023.3.6"/>
-    <property name="com.zaxxer.hikari.pool_number" value="2"/>
+    <property name="com.zaxxer.hikari.pool_number" value="3"/>
     <property name="catalina.home" value="C:\Users\mateo\AppData\Local\Temp\tomcat.0.797129385811801407"/>
     <property name="java.version" value="17.0.10"/>
     <property name="user.dir" value="C:\Users\mateo\OneDrive\Documentos\GitHub\Pt1-LCIV\modelo-finall-lciv-api-loteria-404947-Gallo-Mateo"/>
@@ -67,60 +67,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="getInfoSorteoById_BadRequest" classname="ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest" time="0.17">
-    <system-out><![CDATA[2024-10-04T00:37:37.399-03:00  INFO 9496 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest]: LoteriaControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-10-04T00:37:37.410-03:00  INFO 9496 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration ar.edu.utn.frc.tup.lciii.Application for test class ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest
-2024-10-04T00:37:38.183-03:00  INFO 9496 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
-2024-10-04T00:37:38.185-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-10-04T00:37:38.187-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+  <testcase name="getSorteoById_Success_sorteo_Sin_apuestas" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.026">
+    <system-out><![CDATA[2024-10-04T00:37:40.500-03:00  INFO 9496 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest]: LoteriaServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-04T00:37:40.519-03:00  INFO 9496 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration ar.edu.utn.frc.tup.lciii.Application for test class ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest
 ]]></system-out>
   </testcase>
-  <testcase name="postApuesta_Success" classname="ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest" time="0.167">
-    <system-out><![CDATA[2024-10-04T00:37:38.336-03:00  INFO 9496 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
-2024-10-04T00:37:38.337-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-10-04T00:37:38.337-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-]]></system-out>
-  </testcase>
-  <testcase name="getSorteos_Success" classname="ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest" time="0.059">
-    <system-out><![CDATA[2024-10-04T00:37:38.481-03:00  INFO 9496 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
-2024-10-04T00:37:38.481-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-10-04T00:37:38.482-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-]]></system-out>
-  </testcase>
-  <testcase name="getSorteoById_BadRequest" classname="ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest" time="0.039">
-    <system-out><![CDATA[2024-10-04T00:37:38.550-03:00  INFO 9496 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
-2024-10-04T00:37:38.551-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-10-04T00:37:38.552-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-]]></system-out>
-  </testcase>
-  <testcase name="postApuesta_BadGateway_V2" classname="ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest" time="0.033">
-    <system-out><![CDATA[2024-10-04T00:37:38.585-03:00  INFO 9496 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
-2024-10-04T00:37:38.586-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-10-04T00:37:38.586-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-]]></system-out>
-  </testcase>
-  <testcase name="getSorteos_BadRequest" classname="ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest" time="0.029">
-    <system-out><![CDATA[2024-10-04T00:37:38.627-03:00  INFO 9496 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
-2024-10-04T00:37:38.628-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-10-04T00:37:38.628-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-]]></system-out>
-  </testcase>
-  <testcase name="getInfoSorteoById_Success" classname="ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest" time="0.051">
-    <system-out><![CDATA[2024-10-04T00:37:38.657-03:00  INFO 9496 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
-2024-10-04T00:37:38.657-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-10-04T00:37:38.658-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-]]></system-out>
-  </testcase>
-  <testcase name="postApuesta_Success_V2" classname="ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest" time="0.024">
-    <system-out><![CDATA[2024-10-04T00:37:38.723-03:00  INFO 9496 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
-2024-10-04T00:37:38.724-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-10-04T00:37:38.725-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-]]></system-out>
-  </testcase>
-  <testcase name="getSorteoById_Success" classname="ar.edu.utn.frc.tup.lciii.controllers.LoteriaControllerTest" time="0.036">
-    <system-out><![CDATA[2024-10-04T00:37:38.755-03:00  INFO 9496 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
-2024-10-04T00:37:38.755-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-10-04T00:37:38.755-03:00  INFO 9496 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-]]></system-out>
-  </testcase>
+  <testcase name="getSorteoById_Success_sorteo_Con_apuestas" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.02"/>
+  <testcase name="postApuesta_Success_resultado_ganador" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.066"/>
+  <testcase name="getSorteosByFecha_Success_allSorteos" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.009"/>
+  <testcase name="getInfoByIdSorteo_Null_no_hay_sorteos" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.011"/>
+  <testcase name="postApuesta_Null_sorteo_no_existe" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.01"/>
+  <testcase name="postApuesta_Null_montoApostado_mayor_que_reserva_del_sorteo" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.01"/>
+  <testcase name="getSorteosByFecha_Success_SorteoByFechas" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.009"/>
+  <testcase name="getInfoByIdSorteo_Success_sorteo_Sin_apuestas" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.012"/>
+  <testcase name="getInfoByIdSorteo_Success_sorteo_Con_apuestas" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.015"/>
+  <testcase name="postApuesta_Success_resultado_perdedor" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.01"/>
+  <testcase name="getSorteoById_Null_no_encuentra_sorteo_con_idSorteo" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.01"/>
+  <testcase name="getInfoByIdSorteo_Null_no_encuentra_sorteo_con_idSorteo" classname="ar.edu.utn.frc.tup.lciii.services.LoteriaServiceTest" time="0.01"/>
 </testsuite>

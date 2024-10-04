@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  loteria-micro:
+    build: .
+    image: loteria-app
+    container_name: loteria-micro
+    ports:
+      - "8000:8000"
+    environment:
+      APP_NAME: loteria-app
+      EXTERNAL_API_URL: http://loteria-api-externa:8082
+    depends_on:
+      - loteria-api-externa
+
+
+  loteria-api-externa:
+    image: gabrielarriola/api-loteria
+    container_name: loteria-api-externa
+    ports:
+      - "8082:8082"
+    networks:
+      - loteria-network

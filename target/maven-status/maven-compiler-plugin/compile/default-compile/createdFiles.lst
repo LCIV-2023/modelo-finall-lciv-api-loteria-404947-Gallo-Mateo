@@ -13,7 +13,6 @@ ar\edu\utn\frc\tup\lciii\Entities\ApuestaEntity.class
 ar\edu\utn\frc\tup\lciii\dtos\common\ErrorApi.class
 ar\edu\utn\frc\tup\lciii\Application.class
 ar\edu\utn\frc\tup\lciii\domain\Sorteo.class
-ar\edu\utn\frc\tup\lciii\domain\InfoApuestas.class
 ar\edu\utn\frc\tup\lciii\Entities\ApuestasDelSorteo.class
 ar\edu\utn\frc\tup\lciii\repositories\SorteoRepository.class
 ar\edu\utn\frc\tup\lciii\configs\SpringDocConfig.class
